@@ -70,7 +70,7 @@ function scrambler(string){
 function decode(string){
     let decoded_output = 0
     let split_str = string.split("")
-    for (let i = 0; i < split_str; i++){
+    for (let i = 0; i < split_str.length; i++){
         decoded_output = decoded_output * arrayType.length + arrayType.indexOf(string.charAt(i))
     }
     return decoded_output;
